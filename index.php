@@ -1,15 +1,15 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Chat</title>
+    <title>Neptune - Chat</title>
     
     <link rel="stylesheet" href="style.css" type="text/css" />
     
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script type="text/javascript" src="chat.js"></script>
     <script type="text/javascript">
     
@@ -80,7 +80,7 @@
 
 </head>
 
-<body onload="setInterval('chat.update()', 1000)">
+<body onload="setInterval('chat.update()', 10)">
 
     <div id="page-wrap">
     

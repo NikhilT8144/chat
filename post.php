@@ -7,3 +7,4 @@ if(isset($_SESSION['name'])){
     file_put_contents("log.html", $text_message, FILE_APPEND | LOCK_EX);
 }
 ?>
+?>

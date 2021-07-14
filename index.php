@@ -36,12 +36,12 @@ function loginForm(){
 ?>
  
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="utf-8" />
  
         <title>Neptune - Chat</title>
-        <meta name="description" content="Free and Online Chat Application" />
+        <meta name="description" content="Tuts+ Chat Application" />
         <link rel="stylesheet" href="style.css" />
      <link rel="icon" href="Chat.jpg" />
     </head>
@@ -101,7 +101,7 @@ function loginForm(){
                     });
                 }
  
-                setInterval (loadLog, 100);
+                setInterval (loadLog, 2500);
  
                 $("#exit").click(function () {
                     var exit = confirm("Are you sure you want to end the session?");

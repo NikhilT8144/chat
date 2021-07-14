@@ -135,3 +135,6 @@
   .msgln b.user-name-left {
     background: orangered;
   }
+a{
+  text-decoration:none;
+}

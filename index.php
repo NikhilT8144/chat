@@ -41,9 +41,9 @@ function loginForm(){
         <meta charset="utf-8" />
  
         <title>Neptune - Chat</title>
-        <meta name="description" content="Tuts+ Chat Application" />
+        <meta name="description" content="Free and Online Chat Application" />
         <link rel="stylesheet" href="style.css" />
-     <link rel="icon" href="chat.ico" />
+     <link rel="icon" href="Chat.jpg" />
     </head>
     <body>
     <?php

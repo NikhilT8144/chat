@@ -40,7 +40,7 @@ function loginForm(){
     <head>
         <meta charset="utf-8" />
  
-        <title>Neptune - Chat</title>
+        <title>Chat</title>
         <meta name="description" content="Tuts+ Chat Application" />
         <link rel="stylesheet" href="style.css" />
     </head>

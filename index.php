@@ -101,7 +101,7 @@ function loginForm(){
                     });
                 }
  
-                setInterval (loadLog, 0);
+                setInterval (loadLog, 2500);
  
                 $("#exit").click(function () {
                     var exit = confirm("Are you sure you want to end the session?");

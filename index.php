@@ -91,7 +91,7 @@
         <div id="chat-wrap"><div id="chat-area"></div></div>
         
         <form id="send-message-area">
-            <p>Your message: </p>
+            <p>Enter Your Message : </p>
             <textarea id="sendie" maxlength = '100' ></textarea>
         </form>
     

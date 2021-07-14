@@ -40,9 +40,10 @@ function loginForm(){
     <head>
         <meta charset="utf-8" />
  
-        <title>Chat</title>
+        <title>Neptune - Chat</title>
         <meta name="description" content="Tuts+ Chat Application" />
         <link rel="stylesheet" href="style.css" />
+     <link rel="icon" href="chat.ico" />
     </head>
     <body>
     <?php
@@ -100,7 +101,7 @@ function loginForm(){
                     });
                 }
  
-                setInterval (loadLog, 2500);
+                setInterval (loadLog, 100);
  
                 $("#exit").click(function () {
                     var exit = confirm("Are you sure you want to end the session?");

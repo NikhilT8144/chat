@@ -5,7 +5,7 @@
    
   body {
     margin: 20px auto;
-    font-family: "sans-serif";
+    font-family: sans-serif;
     font-weight: 300;
   }
    
@@ -22,7 +22,7 @@
   }
    
   input {
-    font-family: "Lato";
+    font-family: sans-serif;
   }
    
   a {
@@ -80,8 +80,7 @@
    
   #submitmsg,
   #enter{
-    background: #ff9800;
-    border: 2px solid #e65100;
+    background: deepskyblue;
     color: white;
     padding: 4px 10px;
     font-weight: bold;
@@ -103,7 +102,7 @@
    
   a#exit {
     color: white;
-    background: #c62828;
+    background: lightred;
     padding: 4px 8px;
     border-radius: 4px;
     font-weight: bold;
@@ -134,5 +133,5 @@
   }
    
   .msgln b.user-name-left {
-    background: orangered;
+    background: white;
   }

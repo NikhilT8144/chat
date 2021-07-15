@@ -41,7 +41,7 @@ function loginForm(){
         <meta charset="utf-8" />
  
         <title>Neptune - Chat</title>
-        <meta name="description" content="Tuts+ Chat Application" />
+        <meta name="description" content="Free and Live Online Chat Application" />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>

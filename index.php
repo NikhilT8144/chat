@@ -58,7 +58,7 @@ function loginForm(){
             </div>
  
             <div id="chatbox">
-              <p><strong>Server : </strong>Welcome Everyone to Chat.</p>
+              <b class='user-name'>Server</b>Welcome Everyone to Chat.<br>
             <?php
             if(file_exists("log.html") && filesize("log.html") > 0){
                 $contents = file_get_contents("log.html");          

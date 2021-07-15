@@ -104,10 +104,7 @@ function loginForm(){
                 setInterval (loadLog, 2500);
  
                 $("#exit").click(function () {
-                    var exit = confirm("Are you sure you want to end the session?");
-                    if (exit == true) {
                     window.location = "https://neptune.w3spaces.com";
-                    }
                 });
             });
         </script>

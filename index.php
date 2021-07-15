@@ -102,7 +102,7 @@ function loginForm(){
                     });
                 }
  
-                setInterval (loadLog, 10);
+                setInterval (loadLog, 1000);
  
                 $("#exit").click(function () {
                     window.location = "https://neptune.w3spaces.com";

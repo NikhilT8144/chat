@@ -1,4 +1,5 @@
 var peerConnection;
+heroku labs:enable websockets;
  
 /*
  * Setup 'leaveButton' button function.

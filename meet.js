@@ -16,7 +16,7 @@ function leave() {
 /*
  * Prepare websocket for signaling server endpoint.
  */
-var signalingWebsocket = new WebSocket();
+var signalingWebsocket = new WebSocket("wss://chat2244.herokuapp.com/meet.html");
  
 signalingWebsocket.onmessage = function(msg) {
     console.log("Got message", msg.data);

@@ -10,7 +10,7 @@ function leave() {
     console.log('Ending call');
     peerConnection.close();
     signalingWebsocket.close();
-    window.location.href = 'file:///D:\Web\index.html';
+    window.location.href = 'https://neptune.w3spaces.com';
 };
  
 /*

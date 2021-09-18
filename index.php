@@ -3,12 +3,8 @@
 session_start();
  
 if(isset($_GET['logout'])){    
-     
-    //Simple exit message
-    $logout_message = "<div class='msgln'><span class='left-info'>User <b class='user-name-left'>". $_SESSION['name'] ."</b> has left the chat session.</span><br></div>";
-    file_put_contents("log.html", $logout_message, FILE_APPEND | LOCK_EX);
-     
-    session_destroy();
+ 
+ session_destroy();
     header("Location: index.php"); //Redirect the user
 }
  
@@ -39,10 +35,10 @@ function loginForm(){
 <html>
     <head>
         <meta charset="utf-8" />
- 
         <title>Neptune - Chat</title>
         <meta name="description" content="Free and Live Online Chat Application" />
         <link rel="stylesheet" href="style.css" />
+     <script src="notify.js"></script>
         <link rel="icon" href="Chat.ico" type="image/icon"/>
     </head>
     <body>
@@ -86,13 +82,11 @@ function loginForm(){
  
                 function loadLog() {
                     var oldscrollHeight = $("#chatbox")[0].scrollHeight - 20; //Scroll height before the request
- 
                     $.ajax({
                         url: "log.html",
                         cache: false,
                         success: function (html) {
                             $("#chatbox").html(html); //Insert chat log into the #chatbox div
- 
                             //Auto-scroll           
                             var newscrollHeight = $("#chatbox")[0].scrollHeight - 20; //Scroll height after the request
                             if(newscrollHeight > oldscrollHeight){
@@ -101,9 +95,7 @@ function loginForm(){
                         }
                     });
                 }
- 
                 setInterval (loadLog, 2500);
- 
                 $("#exit").click(function () {
                     window.location = "https://neptune.w3spaces.com";
                 });

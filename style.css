@@ -27,10 +27,6 @@
     cursor:pointer;
   }
 
-button {
- cursor:pointer; 
-}
-
   #wrapper,
   #loginform {
     margin: 0 auto;

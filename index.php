@@ -73,12 +73,11 @@ function loginForm(){
             $(document).ready(function () {
                 $("#submitmsg").click(function () {
                     var clientmsg = $("#usermsg").val();
-                 if(clientmsg == null)
-                  //returns
-                }else{
+                 if(clientmsg !== null)
                     $.post("post.php", { text: clientmsg });
                     $("#usermsg").val("");
-         }
+                }
+                 return false;
                 });
  
                 function loadLog() {

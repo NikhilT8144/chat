@@ -34,7 +34,6 @@ function loginForm(){
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
         <title>Neptune - Chat</title>
         <meta name="description" content="Free and Live Online Chat Application" />
         <link rel="stylesheet" href="style.css" />
@@ -61,7 +60,6 @@ function loginForm(){
             }
             ?>
             </div>
- 
             <form name="message" action="">
                 <input name="usermsg" type="text" id="usermsg" />
                 <input name="submitmsg" type="submit" id="submitmsg" value="Send" />
@@ -73,18 +71,15 @@ function loginForm(){
             $(document).ready(function () {
                 $("#submitmsg").click(function () {
                     var clientmsg = $("#usermsg").val();
-                 if(clientmsg !== null)
                     $.post("post.php", { text: clientmsg });
                     $("#usermsg").val("");
-                }
-                 return false;
                 });
  
                 function loadLog() {
                     var oldscrollHeight = $("#chatbox")[0].scrollHeight - 20; //Scroll height before the request
                     $.ajax({
                         url: "log.html",
-                        cache: true,
+                        cache: false,
                         success: function (html) {
                             $("#chatbox").html(html); //Insert chat log into the #chatbox div
                             //Auto-scroll           

@@ -74,7 +74,7 @@ function loginForm(){
                 $("#submitmsg").click(function () {
                     var clientmsg = $("#usermsg").val();
                  if(clientmsg == null)
-                  return 0;
+                  //returns
                 }else{
                     $.post("post.php", { text: clientmsg });
                     $("#usermsg").val("");

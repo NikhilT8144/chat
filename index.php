@@ -86,6 +86,7 @@ function loginForm(){
              setInterval (loadLog, 2500);
                 $("#exit").click(function () {
                     window.location = "https://neptune.w3spaces.com";
+                 loadLog();
                 });
             });
         </script>

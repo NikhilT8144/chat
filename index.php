@@ -53,9 +53,7 @@ function loginForm(){
                 <p class="welcome">Welcome, <b><?php echo $_SESSION['name']; ?></b></p>
                 <p class="logout"><a id="exit" href="#">Exit Chat</a></p>
             </div>
- 
             <div id="chatbox">
-             <div class='msgln'><b class='user-name'>Server</b>Welcome Everyone to Chat.<br></div>
             <?php
             if(file_exists("log.html") && filesize("log.html") > 0){
                 $contents = file_get_contents("log.html");          
@@ -75,16 +73,19 @@ function loginForm(){
             $(document).ready(function () {
                 $("#submitmsg").click(function () {
                     var clientmsg = $("#usermsg").val();
+                 if(clientmsg == null)
+                  return 0;
+                }else{
                     $.post("post.php", { text: clientmsg });
                     $("#usermsg").val("");
-                    return false;
+         }
                 });
  
                 function loadLog() {
                     var oldscrollHeight = $("#chatbox")[0].scrollHeight - 20; //Scroll height before the request
                     $.ajax({
                         url: "log.html",
-                        cache: false,
+                        cache: true,
                         success: function (html) {
                             $("#chatbox").html(html); //Insert chat log into the #chatbox div
                             //Auto-scroll           
@@ -95,12 +96,13 @@ function loginForm(){
                         }
                     });
                 }
-                setInterval (loadLog, 2500);
                 $("#exit").click(function () {
+                    loadlog();
                     window.location = "https://neptune.w3spaces.com";
                 });
             });
         </script>
+     <script src="scripts.js"></script>
     </body>
 </html>
 <?php

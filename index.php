@@ -1,13 +1,9 @@
 <?php
- 
 session_start();
- 
 if(isset($_GET['logout'])){    
- 
  session_destroy();
     header("Location: index.php"); //Redirect the user
 }
- 
 if(isset($_POST['enter'])){
     if($_POST['name'] != ""){
         $_SESSION['name'] = stripslashes(htmlspecialchars($_POST['name']));
@@ -16,7 +12,6 @@ if(isset($_POST['enter'])){
         echo '<span class="error">Please type in a name</span>';
     }
 }
- 
 function loginForm(){
     echo
     '<div id="loginform">
@@ -28,9 +23,7 @@ function loginForm(){
     </form>
   </div>';
 }
- 
 ?>
- 
 <!DOCTYPE html>
 <html>
     <head>
@@ -73,8 +66,8 @@ function loginForm(){
                     var clientmsg = $("#usermsg").val();
                     $.post("post.php", { text: clientmsg });
                     $("#usermsg").val("");
+                 return false;
                 });
- 
                 function loadLog() {
                     var oldscrollHeight = $("#chatbox")[0].scrollHeight - 20; //Scroll height before the request
                     $.ajax({
@@ -90,8 +83,8 @@ function loginForm(){
                         }
                     });
                 }
+             setInterval (loadLog, 2500);
                 $("#exit").click(function () {
-                    loadlog();
                     window.location = "https://neptune.w3spaces.com";
                 });
             });

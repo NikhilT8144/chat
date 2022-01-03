@@ -31,7 +31,7 @@ function loginForm(){
         <meta name="description" content="Free and Live Online Chat Application" />
         <link rel="stylesheet" href="style.css" />
      <script src="notify.js"></script>
-        <link rel="icon" href="Chat.ico" type="image/icon"/>
+        <link rel="icon" href="Chat.png" type="image/icon"/>
     </head>
     <body>
     <?php

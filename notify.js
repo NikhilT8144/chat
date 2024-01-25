@@ -4,7 +4,7 @@ if(permission === "granted") {
 } else if(permission === "default"){
    requestAndShowPermission();
 } else {
-  alert("Use normal alert");
+  alert("Allow us to send you notifications to keep you updated.");
 }
 function showNotification() {
    if(document.visibilityState === "visible) {
